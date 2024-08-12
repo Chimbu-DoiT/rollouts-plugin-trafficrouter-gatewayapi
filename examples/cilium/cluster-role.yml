@@ -5,8 +5,10 @@ metadata:
   namespace: argo-rollouts
 rules:
   - apiGroups:
-      - "*"
+      - gateway.networking.k8s.io
     resources:
-      - "*"
+      - httproutes
     verbs:
-      - "*"
+      - get
+      - patch
+      - update
