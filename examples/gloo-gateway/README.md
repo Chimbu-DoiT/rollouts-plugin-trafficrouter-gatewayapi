@@ -87,14 +87,11 @@ Integration with Argo Rollouts is simple with the Gateway API traffic router plu
      namespace: argo-rollouts
    rules:
      - apiGroups:
-         - gateway.networking.k8s.io
+         - "*"
        resources:
-         - httproutes
+         - "*"
        verbs:
-         - get
-         - patch
-         - update
-
+         - "*"
    EOF
    ```
 
